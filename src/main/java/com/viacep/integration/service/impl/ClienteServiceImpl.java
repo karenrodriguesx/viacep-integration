@@ -54,6 +54,7 @@ public class ClienteServiceImpl implements ClienteService {
 
     private void salvarCliente(ClienteDTO cliente) {
         Cliente clienteSalvo = new Cliente();
+        clienteSalvo.setId(cliente.getId());
         clienteSalvo.setNome(cliente.getNome());
         clienteSalvo.setCpf(cliente.getCpf());
 
